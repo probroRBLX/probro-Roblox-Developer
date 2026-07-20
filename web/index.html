@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>probro — Roblox Developer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-inner">
+        <div class="nav-brand">
+            <span class="nav-mark">PB</span>
+            <span class="nav-status"><span class="status-dot"></span>SYSTEM ONLINE</span>
+        </div>
+        <ul>
+            <li><button id="home-btn">Home</button></li>
+            <li><button id="about-btn">About</button></li>
+            <li><button id="systems-btn">Systems</button></li>
+            <li><button id="games-btn">Games</button></li>
+            <li><button id="connect-btn">Connect</button></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+    <div class="hero-text">
+        <p class="eyebrow">Tayyab Raza</p>
+        <h1 id="titleh1"><a href="https://www.youtube.com/@probro_rblx" target="_blank" rel="noopener">probro</a></h1>
+        <p class="hero-sub">2.7 years building polished Roblox games and scalable gameplay systems, with experience across nearly every aspect of Roblox development.</p>
+        <div class="hero-cta">
+            <button class="hud-btn hud-btn-primary" id="hero-games-btn">View Games</button>
+            <button class="hud-btn" id="hero-connect-btn">Connect</button>
+        </div>
+    </div>
+
+    <div class="avatar-frame">
+        <img src="probro youtube icon.png" alt="probro avatar" id="avatar-img">
+    </div>
+</header>
+
+<main>
+
+    <section class="section hud-panel" id="about">
+        <p class="eyebrow">About me</p>
+        <h2>Who I Am</h2>
+        <p class="body-text">
+       I'm <b>probro</b>, a Roblox developer with <b>2.7 years of hands-on experience</b> building games and gameplay systems. Throughout that time, I've created a wide range of features, including UI, inventories, shops, matchmaking, progression, data saving, animations, gamepasses, leaderboards, round systems, quests, and much more.
+
+My goal isn't just to make features work—it's to build systems that are clean, reliable, and easy to expand as a game grows. While there's always something new to learn, I've gained experience across most aspects of Roblox development and enjoy tackling both technical challenges and creative gameplay ideas. Below are a few of the projects I've built, all live and playable.
+
+        </p>
+    </section>
+
+    <section class="section hud-panel" id="systems">
+        <p class="eyebrow">Systems</p>
+        <h2>What I Can Do</h2>
+        <p class="body-text section-lead">A rundown of the systems I build with, from the basics to the ones that hold a whole game together.</p>
+
+        <div class="systems-grid">
+            <div class="tile"><span class="tile-check">✔</span>DataStores</div>
+            <div class="tile"><span class="tile-check">✔</span>Sliding System</div>
+            <div class="tile"><span class="tile-check">✔</span>FPS System</div>
+            <div class="tile"><span class="tile-check">✔</span>Climbing System</div>
+            <div class="tile"><span class="tile-check">✔</span>Movement System</div>
+            <div class="tile"><span class="tile-check">✔</span>Drawing System</div>
+            <div class="tile"><span class="tile-check">✔</span>Queue System<span class="tile-new">NEW</span></div>
+            <div class="tile"><span class="tile-check">✔</span>Round System<span class="tile-new">NEW</span></div>
+            <div class="tile"><span class="tile-check">✔</span>Table System<span class="tile-new">NEW</span></div>
+        </div>
+    </section>
+
+    <section class="section" id="games">
+        <p class="eyebrow">Games Library</p>
+        <h2>Games I've Made</h2>
+        <p class="body-text section-lead">Live on Roblox — click any card to play.</p>
+
+        <div class="games-cont">
+
+            <button class="game-card hud-panel" id="pauseIt" data-genre="party">
+                <span class="genre-tag">PARTY / CASUAL</span>
+                <span class="game-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="22" stroke="currentColor" stroke-width="3"/>
+                        <line x1="32" y1="32" x2="32" y2="16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="32" y1="32" x2="42" y2="38" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="32" y1="6" x2="32" y2="12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="52" y1="12" x2="48" y2="16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="12" y1="12" x2="16" y2="16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="game-title">Pause It</span>
+                <span class="game-desc">A fast-paced party game about freezing the clock before your opponent does.</span>
+                <span class="play-link">PLAY NOW →</span>
+            </button>
+
+            <button class="game-card hud-panel" id="plantsBrainrots" data-genre="tycoon">
+                <span class="genre-tag">TYCOON</span>
+                <span class="game-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32 44V24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M32 24C32 24 20 24 20 14C30 14 32 24 32 24Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                        <path d="M32 24C32 24 44 24 44 14C34 14 32 24 32 24Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                        <path d="M16 52C16 46 23 44 32 44C41 44 48 46 48 52" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="32" cy="52" r="4" stroke="currentColor" stroke-width="3"/>
+                    </svg>
+                </span>
+                <span class="game-title">Plants vs Brainrots</span>
+                <span class="game-desc">Grow, defend, and cash in — a tycoon built around the brainrot craze.</span>
+                <span class="play-link">PLAY NOW →</span>
+            </button>
+
+            <button class="game-card hud-panel" id="fugaBattles" data-genre="battle">
+                <span class="genre-tag">BATTLEGROUNDS</span>
+                <span class="game-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="12" y1="52" x2="46" y2="18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="52" y1="52" x2="18" y2="18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="8" y1="48" x2="16" y2="56" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="56" y1="48" x2="48" y2="56" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="game-title">Fuga Battles</span>
+                <span class="game-desc">Head-to-head combat built for speed and skill.</span>
+                <span class="play-link">PLAY NOW →</span>
+            </button>
+
+        </div>
+    </section>
+
+    <section class="section hud-panel connect-panel" id="connect">
+        <p class="eyebrow">Connect</p>
+        <h2>Find Me Elsewhere</h2>
+        <p class="body-text section-lead">New videos and updates go here first.</p>
+
+    <div class="connect-links">
+    <a href="https://www.youtube.com/@probro_rblx" target="_blank" rel="noopener" class="connect-btn">
+        <img src="youtube.png" alt="YouTube" class="connect-icon">
+        <span>YouTube</span>
+    </a>
+
+    <a href="https://discord.com/invite/H6QWFF4KwK" target="_blank" rel="noopener" class="connect-btn">
+        <img src="discord.png" alt="Discord" class="connect-icon">
+        <span>Discord</span>
+    </a>
+
+    <a href="https://www.roblox.com/users/5418351594/profile" target="_blank" rel="noopener" class="connect-btn">
+        <img src="roblox.png" alt="Roblox" class="connect-icon">
+        <span>Roblox</span>
+    </a>
+</div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>// probro_rblx · Tayyab Raza <span id="year"></span></p>
+</footer>
+
+<script src="js.js"></script>
+</body>
+</html>
